@@ -9,7 +9,7 @@ def make_order(order, prices, stock):
         if not stock.get(item, False):
             return "Замовлення не можливе, не вистачає певних товарів"
     total = sum(prices[item] for item in order)
-    return f"Ваше замовлення прийнято. Загальна ціна {format_price(total)}"
+    return f"Ваше замовлення прийнято. Загальна {format_price(total)}"
 
 prices = {
     "хліб": 30,
